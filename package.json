@@ -1,0 +1,32 @@
+{
+  "name": "service-base64encoding",
+  "version": "0.0.1",
+  "description": "Base64 encoding as a service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kr1sp1n/service-base64encoding.git"
+  },
+  "keywords": [
+    "service",
+    "base64"
+  ],
+  "author": "kr1sp1n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kr1sp1n/service-base64encoding/issues"
+  },
+  "homepage": "https://github.com/kr1sp1n/service-base64encoding",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "node-dev": "^2.7.1"
+  }
+}
