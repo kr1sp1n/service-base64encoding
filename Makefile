@@ -4,6 +4,11 @@ PROJECT  ?= kr1sp1n/service-base64encoding
 TAG      ?= latest
 PORT 		 ?= 5050
 
+ifdef HOST_PORT
+else
+  HOST_PORT=$(PORT)
+endif
+
 ifdef REGISTRY
 	IMAGE=$(REGISTRY)/$(PROJECT):$(TAG)
 else
@@ -24,7 +29,7 @@ build: Dockerfile install
 	docker build -t $(IMAGE) .
 
 run:
-	docker run -d -p $(PORT):$(PORT) $(IMAGE)
+	docker run -d -p $(HOST_PORT):$(PORT) -e PORT=$(PORT) $(IMAGE)
 
 pull:
 	docker pull $(IMAGE) || true
