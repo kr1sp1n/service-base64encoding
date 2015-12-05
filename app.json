@@ -1,0 +1,7 @@
+{
+  "name": "service-base64encoding",
+  "description": "Base64 encoding as a service",
+  "repository": "https://github.com/kr1sp1n/service-base64encoding",
+  "keywords": ["base64", "REST", "API", "util"],
+  "image": "heroku/nodejs"
+}
